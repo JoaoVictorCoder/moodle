@@ -112,7 +112,7 @@ p {
 } 
 
 .informacoesTexto {
-    color: rgba(255, 255, 255, 0.775);
+    color: rgba(255, 255, 255, 0.1);
     text-decoration: underline;
     cursor: pointer;
     font-size: 1em;
