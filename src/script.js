@@ -14,7 +14,7 @@ let titulo
 function adicionaEvento(elemento, opcao) {
     elemento.addEventListener('click', () => {
         if (opcao == -1) {
-            window.location.replace('./moodle')
+            window.location.replace('/')
 
         } else {
             localStorage.setItem('categoria', opcao)
@@ -42,7 +42,7 @@ adicionaEvento(eletronica, 4)
 adicionaEvento(inicio, -1)
 
 
-if(window.location.pathname == '/paginas/cursos.html') 
+if(window.location.pathname == '/paginas/cursos') 
     titulo = document.getElementById('titulo')
     opcao = localStorage.getItem('categoria')
     switch(opcao) {
@@ -64,5 +64,5 @@ if(window.location.pathname == '/paginas/cursos.html')
     }
     cursosValores.forEach((curso, index) => {
         cursosDiv.innerHTML = cursosDiv.innerHTML + `<div class="curso"><a>${curso}</a></div>`
-        cursos[index].href = './curso.html'
+        cursos[index].href = './curso'
     })
