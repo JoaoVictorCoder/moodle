@@ -14,11 +14,11 @@ let titulo
 function adicionaEvento(elemento, opcao) {
     elemento.addEventListener('click', () => {
         if (opcao == -1) {
-            window.location.replace('/')
+            window.location.replace('/moodle')
 
         } else {
             localStorage.setItem('categoria', opcao)
-            window.location.replace('/paginas/cursos')
+            window.location.replace('/moodle/paginas/cursos')
         }
 
     })
@@ -42,7 +42,7 @@ adicionaEvento(eletronica, 4)
 adicionaEvento(inicio, -1)
 
 
-if(window.location.pathname == '/paginas/cursos') 
+if(window.location.pathname == '/moodle/paginas/cursos') 
     titulo = document.getElementById('titulo')
     opcao = localStorage.getItem('categoria')
     switch(opcao) {
