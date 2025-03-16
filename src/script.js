@@ -14,7 +14,7 @@ let titulo
 function adicionaEvento(elemento, opcao) {
     elemento.addEventListener('click', () => {
         if (opcao == -1) {
-            window.location.replace('/moodle')
+            window.location.replace('/moodle/')
 
         } else {
             localStorage.setItem('categoria', opcao)
