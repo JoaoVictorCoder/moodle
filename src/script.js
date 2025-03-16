@@ -14,11 +14,11 @@ let titulo
 function adicionaEvento(elemento, opcao) {
     elemento.addEventListener('click', () => {
         if (opcao == -1) {
-            window.location.replace('./index.html')
+            window.location.replace('./moodle')
 
         } else {
             localStorage.setItem('categoria', opcao)
-            window.location.replace('./paginas/cursos.html')
+            window.location.replace('./paginas/cursos')
         }
 
     })
